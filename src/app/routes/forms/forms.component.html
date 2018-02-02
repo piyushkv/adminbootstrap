@@ -1,0 +1,91 @@
+<app-admin-header></app-admin-header>
+<div class="container-fluid">
+      <div class="row">
+        <app-admin-nav></app-admin-nav>
+        <main role="main" class="ml-md-auto col-md-12 col-lg-10 pt-3">
+          <h1>Forms</h1>
+          <div class="panels">
+            <div class="panel-content">
+            	<div class="row">
+            		<div class="col-sm-12">
+					    <alert type="success">
+					      <strong>Well done!</strong> You successfully read this important alert message.
+					    </alert>
+					    <alert type="info">
+					      <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+					    </alert>
+					    <alert type="warning">
+					      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+					    </alert>
+					    <alert type="danger">
+					      <strong>Oh snap!</strong> Change a few things up and try submitting again.
+					    </alert>
+            		</div>
+            	</div>
+            	<div class="row">
+            		<div class="col-sm-6">
+            			<div class="form-group">
+						    <label for="exampleInputEmail1">input Field</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Text">
+						</div>
+	            	</div>
+            		<div class="col-sm-6">
+            			<div class="form-group">
+						    <label for="exampleInputEmail1">Datepicker</label>
+	            			<input type="text"
+					           class="form-control"
+					           [minDate]="minDate"
+					           [maxDate]="maxDate"
+					           #dp="bsDatepicker"
+					           bsDatepicker [(bsValue)]="bsValue"
+					           [bsConfig]="{ containerClass: 'theme-dark-blue' }"
+					           >
+					    </div>
+            		</div>
+            	</div>
+            	<div class="row">
+            		<div class="col-sm-6">
+            			<div class="form-group">
+						    <label for="exampleInputEmail1">Search Box</label>
+						    <input [(ngModel)]="selected"
+						       [typeahead]="states"
+						       [typeaheadItemTemplate]="customItemTemplate"
+						       placeholder="Search your query" 
+						       class="form-control">
+						</div>
+	            		</div>
+	            		<div class="col-sm-6">
+	            			<div class="form-group">
+						    <label for="exampleInputEmail1">Email address</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						  </div>
+            		</div>
+            	</div>
+            	<div class="row">
+            		<div class="col-sm-6">
+            			<div class="form-group">
+						    <label for="exampleInputEmail1">Email address</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						</div>
+	            		</div>
+	            		<div class="col-sm-6">
+	            			<div class="form-group">
+						    <label for="exampleInputEmail1">Email address</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						  </div>
+            		</div>
+            	</div>
+            </div>
+            <div class="panel-footer">
+            	<button type="button" class="btn btn-primary">Primary</button>
+				<button type="button" class="btn btn-secondary">Secondary</button>
+				<button type="button" class="btn btn-success">Success</button>
+				<button type="button" class="btn btn-danger">Danger</button>
+				<button type="button" class="btn btn-warning">Warning</button>
+				<button type="button" class="btn btn-info">Info</button>
+				<button type="button" class="btn btn-dark">Dark</button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>

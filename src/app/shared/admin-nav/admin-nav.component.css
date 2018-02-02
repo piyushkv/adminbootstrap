@@ -1,0 +1,48 @@
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px 0;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  background-color: #fff;
+  border-right: 0px;
+  transition: all ease 0.3s;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+  background-color: transparent;
+  border-color: #d1d9dd;
+  color: #007bff;
+}
+.sidebar .nav {
+}
+
+.sidebar .nav-item {
+  width: 100%;
+  padding:.3rem 1rem;
+  font-size: 12px;
+}
+
+.sidebar .nav-item + .nav-item {
+  margin-left: 0;
+}
+.sidebar .nav-item img{width: 15px; display: inline-block; vertical-align: middle; margin-right: 5px}
+.sidebar .nav-link {
+  border-radius: 0;
+  border:1px solid transparent;
+  padding: 5px;
+  border-radius: 2px;
+}
+h4{font-size: 12px; text-transform: uppercase; padding-left:15px; padding:.5rem 1rem; margin-bottom: 0; }
+
+
+@media only screen and (max-width: 991px){
+  .sidebar{left: -300px; max-width: 250px;}
+  .sidebar.open{left: 0;}
+}

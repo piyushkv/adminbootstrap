@@ -1,0 +1,20 @@
+<div class="login_wrap">
+	<div class="login">
+		<div class="logo">
+			<img src="assets/images/logo.png" alt="logo"> Admin Panel
+		</div>
+		<div class="form_wrap">
+			<form>
+				<input type="text" placeholder="Username" name="">
+				<input type="password" placeholder="Password" name="">
+				<button [routerLink]="['/dashboard']">Login</button>
+			</form>
+		</div>
+		<div class="forgot">
+			<a href="javascript:void(0);" [routerLink]="['/forgot']">Forgot your Password?</a>
+		</div>
+		<div class="signup">
+			Don't have an account? <a href="">Get Started</a>
+		</div>
+	</div>
+</div>

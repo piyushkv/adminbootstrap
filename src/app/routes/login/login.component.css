@@ -1,0 +1,58 @@
+.login_wrap{
+	width: 100%;
+	margin-top: -3.5rem;
+	height: calc(100% + 3.5rem);
+	padding: 15px;
+	background: linear-gradient(154deg,#008fe2 0,#00b29c 100%);
+}
+.login{
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+}
+.logo{
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 50px;
+}
+img{
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: top;
+	max-height: 50px;
+}
+.form_wrap{
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 40px;
+	margin: 20px 0;
+}
+input{
+	border:1px solid #ddd;
+	border-radius: 2px;
+	padding: 10px;
+	margin-bottom: 8px;
+	width: 100%;
+}
+button{
+	background-color: #00b29c;
+	width: 100%; border:0px;
+	border-radius: 2px;
+	color: #fff;
+	padding: 10px;
+}
+.forgot{
+	float: left;
+}
+a{
+	color: #fff;
+}
+.signup{
+	float: right;
+	color: #fff;
+}
+a{
+	color: #fff;
+}
