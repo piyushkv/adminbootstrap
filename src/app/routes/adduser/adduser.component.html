@@ -1,0 +1,60 @@
+<div class="login_wrap">
+	<div class="login">
+		<div class="logo">
+			<img src="assets/images/logo.png" alt="logo"> Registration
+		</div>
+		<div class="form_wrap">
+			<form>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="form-group">
+						    <label for="email">First Name</label>
+						    <input type="text" class="form-control" [(ngModel)]="user.firstName" id="email" aria-describedby="email" placeholder="Enter First Name">
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form-group">
+						    <label for="username">Last Name</label>
+						    <input type="text" class="form-control" [(ngModel)]="user.lastName" id="username" aria-describedby="username" placeholder="Enter Last Name">
+					 	</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="form-group">
+						    <label for="email">Email Address</label>
+						    <input type="text" class="form-control" [(ngModel)]="user.email" id="email" aria-describedby="email" placeholder="Enter email">
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form-group">
+						    <label for="username">Username</label>
+						    <input type="text" class="form-control" [(ngModel)]="user.username" id="username" aria-describedby="username" placeholder="Enter Username">
+					 	</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="form-group">
+						    <label for="email">Password</label>
+						    <input type="password" class="form-control" [(ngModel)]="user.password" id="email" aria-describedby="email" placeholder="Enter Password">
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form-group">
+						    <label for="username">Confirm password</label>
+						    <input type="password" class="form-control" [(ngModel)]="user.confirmPassword" id="username" aria-describedby="username" placeholder="Confirm Password">
+					 	</div>
+					</div>
+				</div>
+				<button (click)="onSubmit(user)">Register</button>
+			</form>
+		</div>
+		<div class="forgot col-sm-12 text-center">
+			<a href="javascript:void(0);" [routerLink]="['/']">Login</a>
+		</div>
+		<!--div class="signup">
+			Don't have an account? <a href="">Get Started</a>
+		</div-->
+	</div>
+</div>

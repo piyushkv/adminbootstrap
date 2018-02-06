@@ -1,3 +1,19 @@
-<p>
-  forgot works!
-</p>
+<div class="login_wrap">
+	<div class="login">
+		<div class="logo">
+			<img src="assets/images/logo.png" alt="logo"> Admin Panel
+		</div>
+		<div class="form_wrap">
+			<form>
+				<input type="text" placeholder="Username" name="">
+				<button [routerLink]="['/dashboard']">Send reset link</button>
+			</form>
+		</div>
+		<div class="forgot col-sm-12 text-center">
+			<a href="javascript:void(0);" [routerLink]="['/']">LogIn</a>
+		</div>
+		<!--div class="signup">
+			Don't have an account? <a href="javascript">Get Started</a>
+		</div-->
+	</div>
+</div>

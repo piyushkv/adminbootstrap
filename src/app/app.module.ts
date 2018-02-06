@@ -2,11 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { routing } from './app.routing';
 
+import { ChartsModule } from 'ng2-charts';
 import { HttpModule, Http, RequestOptions } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { BsDatepickerModule,
           TypeaheadModule,
-          AlertModule  } from 'ngx-bootstrap';
+          AlertModule,
+          TabsModule   } from 'ngx-bootstrap';
 
 
 import { AppComponent } from './app.component';
@@ -18,6 +20,7 @@ import { ForgotComponent } from './routes/forgot/forgot.component';
 import { ProfileComponent } from './routes/profile/profile.component';
 import { FormsComponent } from './routes/forms/forms.component';
 import { TableComponent } from './routes/table/table.component';
+import { AdduserComponent } from './routes/adduser/adduser.component';
 
 
 @NgModule({
@@ -30,7 +33,8 @@ import { TableComponent } from './routes/table/table.component';
     ForgotComponent,
     ProfileComponent,
     FormsComponent,
-    TableComponent
+    TableComponent,
+    AdduserComponent
   ],
   imports: [
     BrowserModule,
@@ -38,8 +42,10 @@ import { TableComponent } from './routes/table/table.component';
     BsDatepickerModule.forRoot(),
     TypeaheadModule.forRoot(),
     AlertModule.forRoot(),
+    TabsModule.forRoot(),
     FormsModule,
-    HttpModule
+    HttpModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

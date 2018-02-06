@@ -46,6 +46,35 @@
               </div>
             </div>
           </section>
+          <section class="row placeholders">
+            <div class="col-sm-6">
+              <div class="panels">
+                <div class="panel-content nopadding">
+                      <canvas baseChart
+                      [data]="lineChartData"
+                      [labels]="lineChartLabels"
+                      [options]="lineChartOptions"
+                      [chartType]="lineChartType"
+                      (chartHover)="chartHovered($event)"
+                      (chartClick)="chartClicked($event)"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="panels">
+                <div class="panel-content nopadding">
+                  <canvas baseChart
+                  [datasets]="barChartData"
+                  [labels]="barChartLabels"
+                  [options]="barChartOptions"
+                  [legend]="barChartLegend"
+                  [chartType]="barChartType"
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"></canvas>
+                </div>
+              </div>
+            </div>
+          </section>
           <div class="panels">
             <div class="panel-heading">
               <h3>Section title</h3>

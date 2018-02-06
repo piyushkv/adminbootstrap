@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-
+  alertMe(): void {
+    setTimeout(function(): void {
+      alert("You've selected the alert tab!");
+    });
+  }
   constructor() { }
 
   ngOnInit() {

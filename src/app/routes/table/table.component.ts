@@ -12,12 +12,7 @@ export class TableComponent implements OnInit {
   constructor( private httpService : TabledataService){}
   items: any[] = [];
   ngOnInit(){
-  	this.httpService.getData()
-  	.subscribe(
-  		(userData: Response) => {
-  			this.items = userData;
-  		}
-  	);  		
+  	this.httpService.getData().subscribe(items => this.items = items );
   };
 
 }
